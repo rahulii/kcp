@@ -63,7 +63,7 @@ func TestSyncTargetCompatibleReconcile(t *testing.T) {
 			},
 		},
 		{
-			name: "incompatible when missing APIResourceImport",
+			name: "pending when missing APIResourceImport",
 			syncTarget: newSyncTarget([]tenancyv1alpha1.APIExportReference{
 				{
 					Export: "kubernetes",
